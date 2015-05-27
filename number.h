@@ -3,8 +3,10 @@
 template <typename T> class Number
 {
 public:
-    Number(T value);
+    Number();
+    Number(T value) {m_Value = value;}
  
+    void SetToZero() {m_Value -= m_Value;}
 //void print();
 
 protected:

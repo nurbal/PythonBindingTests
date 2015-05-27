@@ -3,9 +3,15 @@
 #include <stdio.h>
 
 
-template <typename T> 
-Number<T>::Number(T value)
+// specialisation du constructeur par défaut
+template<>
+Number<int>::Number()
 {
-    m_Value = value;
+    m_Value = 0;
 }
 
+template<>
+Number<float>::Number()
+{
+    m_Value = 0.f;
+}
