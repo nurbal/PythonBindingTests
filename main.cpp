@@ -15,13 +15,22 @@ int main(int argc, char const *argv[])
 
     Number<int> i1;
     Number<float> f1;
-    i1.SetToZero();
     Number<int> i2(1);
     Number<float> f2(1.f);
 
+    i1.print();
+    i2.print();
+    f1.print();
+    f2.print();
 
 
+    // petit test avec les datas...
+    i1.setData("One","Un");
+    i1.setData("Car","Véhicule de type automobile");
 
+    printf("getData(\"Car\") = %s\n",i1.getData("Car").c_str());
+    printf("printDatas() : \n");
+    i1.printDatas();
 
     return 0;
 }
