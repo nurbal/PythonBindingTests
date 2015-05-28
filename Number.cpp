@@ -19,14 +19,14 @@ Number<float>::Number()
 
 
 template<>
-void Number<int>::print()
+void Number<int>::printValue()
 {
     printf("%d\n",m_Value);
 
 }
 
 template<>
-void Number<float>::print()
+void Number<float>::printValue()
 {
     printf("%f\n",m_Value);
 }

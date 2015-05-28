@@ -6,13 +6,13 @@
 
 template <typename T> class Number
 {
-public:
+ public:
     Number();
     Number(T value) {m_Value = value;}
  
     void SetToZero() {m_Value -= m_Value;}
     
-    void print(); // prints the value on the console
+    void printValue(); // prints the value on the console
     void printDatas() // prints the value on the console
     {
         for (std::map<std::string,std::string>::iterator it = m_Datas.begin();it != m_Datas.end(); it++)

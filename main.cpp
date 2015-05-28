@@ -18,10 +18,10 @@ int main(int argc, char const *argv[])
     Number<int> i2(1);
     Number<float> f2(1.f);
 
-    i1.print();
-    i2.print();
-    f1.print();
-    f2.print();
+    i1.printValue();
+    i2.printValue();
+    f1.printValue();
+    f2.printValue();
 
 
     // petit test avec les datas...
